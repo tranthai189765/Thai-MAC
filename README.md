@@ -17,3 +17,5 @@ python changed_main.py --env Pose-v1 --model multi-att-shap --workers 6
 ```
 python changed_main.py --env Pose-v1 --model multi-att-shap --workers 0 --load-coordinator-dir trainedModel/best_coordinator.pth --load-executor-dir trainedModel/best_executor.pth
 ```
+
+Trong đó trainedModel/best_coordinator.pth và trainedModel/best_executor.pth là các models đã được train
