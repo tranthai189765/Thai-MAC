@@ -1,21 +1,26 @@
 # Thai-MAC
-Thuật toán được xây dựng dựa trên thuật toán Hit-MAC cho môi trường MATE
-Thuật toán Hit-MAC : https://arxiv.org/pdf/2010.13110
 
-# Cấu trúc các câu lệnh
-Để train coordinator: 
+This project implements a multi-agent coordination algorithm based on **Hit-MAC**, designed for the **MATE** environment.
+
+📄 Reference paper (Hit-MAC): [https://arxiv.org/pdf/2010.13110](https://arxiv.org/pdf/2010.13110)
+
+---
+
+## Command Usage
+
+### Train the Coordinator
 ```
 python changed_main.py --env Pose-v0 --model single-att --workers 6
 ```
 
-Để train executores : 
+### Train the Executors
 ```
 python changed_main.py --env Pose-v1 --model multi-att-shap --workers 6
 ```
 
-Để chạy model : 
+### Run the Trained Model
 ```
 python changed_main.py --env Pose-v1 --model multi-att-shap --workers 0 --load-coordinator-dir trainedModel/best_coordinator.pth --load-executor-dir trainedModel/best_executor.pth
 ```
 
-Trong đó trainedModel/best_coordinator.pth và trainedModel/best_executor.pth là các models đã được train
+trainedModel/best_coordinator.pth and trainedModel/best_executor.pth are pretrained model checkpoints.
