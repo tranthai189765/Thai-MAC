@@ -1,0 +1,9 @@
+# Core dependencies
+torch>=1.10
+numpy
+tensorboardX
+setproctitle
+
+# The MATE environment is required but installed separately from source:
+#   git config --global core.symlinks true   # Windows only
+#   pip install "git+https://github.com/XuehaiPan/mate.git#egg=mate"
